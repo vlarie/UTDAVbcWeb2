@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        {% include "head.html" %}
+        <title>Home</title>
+    </head>
+
+    
+    <body>  
+        {% include "navbar.html" %}
+       
+    <div class="container-fluid w-100">
+        <div class="row align-items-top">
+            <div class="col-lg-8 col-md-12 col-sm-12" id="summary">
+                <h2>Summary: &nbsp;Effects of Latitude on Weather</h2>
+                <hr>    
+                    <div class="media">
+                        <div class="media-body">
+                                <img class="shadow-sm p-3 mb-5 bg-white rounded" id="homeImage" src="../static/Images/temp.png" alt="TemperaturevLatitude" width="50%">
+                            <p>This project randomly selected over 500 cities around the globe and evaluated 
+                                various weather metrics in relation to each cities latitude.  It was posited that certain weather conditions like temperature may be directly 
+                                correlated to distance from the equator.</p>
+                            <p>The results were an interesting mix ranging from clear relationships 
+                                to less obvious, possible connections.  Surely, other factors are at play 
+                                in some instances.  Check out the plots to investigate further!</p>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12" id="otherviz">
+                <h2>Visualizations</h2>
+                <hr>
+                <div class="row" id="othervizrow">
+                    <div class="col-sm">
+                        <a href="/temp">
+                            <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/tempWO.png" title="Temperature" width=100%>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="/humid">
+                            <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/humidWO.png" title="Humidity" width=100%>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" id="othervizrow">
+                    <div class="col-sm">
+                        <a href="/cloud">
+                            <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/cloudWO.png" title="Cloud Coverage" width=100%>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="/wind">
+                            <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/windWO.png" title="Wind Speed" width=100%>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+            <!-- Links to four visualization pages -->
+            <!-- Cards were cool to learn and play with, but need more development to look right at varying screen sizes -->
+            <!-- <section class="container-fluid" id="plots">
+                <div class="row w-100 align-items-top">
+                    <div class="col-md-3">
+                        <div class="card" id="plotCards">
+                            <a href="/temp">
+                            <div class="card-body">
+                                <h4 class="card-title">Temperature</h4>
+                                <hr>
+                                <img src="../static/Images/tempWOtit.png" title="Temperature" width=100%>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" id="plotCards">
+                            <a href="/humid">
+                            <div class="card-body">
+                                <h4 class="card-title">Humidity</h4>
+                                <hr>
+                                <img src="../static/Images/humidWOtit.png" title="Humidity" width=100%>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" id="plotCards">
+                            <a href="/cloud">
+                            <div class="card-body">
+                                <h4 class="card-title">Cloud Coverage</h4>
+                                <hr>
+                                <img src="../static/Images/cloudWOtit.png" title="Cloud Coverage" width=100%>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card" id="plotCards">
+                            <a href="/wind">
+                            <div class="card-body">
+                                <h4 class="card-title">Wind Speed</h4>
+                                <hr>
+                                <img src="../static/Images/windWOtit.png" title="Wind Speed" width=100%>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        
+    <footer>
+        {% include "footer.html" %}
+    </footer>
+
+    {% include "scripts.html" %}
+
+</body>
+
+
+</html>

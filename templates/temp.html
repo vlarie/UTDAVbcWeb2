@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    {% include "head.html" %} 
+    <title>Temperature vs. Latitude</title>
+  </head>
+
+
+  <body>
+    {% include "navbar.html" %} 
+
+  <div class="container-fluid">
+    <div class="row align-items-top">
+        <div class="col-lg-8 col-md-12 col-sm-12" id="summary">
+          <h2>Temperature vs. Latitude</h2>
+          <hr>    
+          <div class="media">
+            <div class="media-body">
+              <img class="shadow-sm p-3 mb-5 bg-white rounded" id="homeImage" src="../static/Images/tempWOtit.png" alt="TemperaturevLatitude" width="50%">
+              <p>Temperature reveals the clearest relationship to latitude with a visually parabolic curve.  
+                As cities near the equator (latitude 0), recorded temperatures increase. </p> 
+              <p>The arrangement of temperature recordings is sensible given the earth's tilt and 
+                the area around the equator receiving more direct sunlight.</p>
+              <br><hr>
+              <div class="text-center">
+              <button type="button" id="viewLG" class="btn btn-secondary" data-toggle="modal" data-target=".bd-example-modal-lg">View larger</button>
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <img class="shadow-sm p-3 mb-5 bg-white rounded" id="homeImage" src="../static/Images/temp.png" alt="TemperaturevLatitude" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-12 col-sm-12" id="otherviz">
+          <h2>Visualizations</h2>
+          <hr>
+          <div class="row" id="othervizrow">
+              <div class="col-sm">
+                  <a href="/temp">
+                      <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/tempWO.png" title="Temperature" width=100%>
+                  </a>
+              </div>
+              <div class="col-sm">
+                  <a href="/humid">
+                      <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/humidWO.png" title="Humidity" width=100%>
+                  </a>
+              </div>
+          </div>
+          <div class="row" id="othervizrow">
+              <div class="col-sm">
+                  <a href="/cloud">
+                      <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/cloudWO.png" title="Cloud Coverage" width=100%>
+                  </a>
+              </div>
+              <div class="col-sm">
+                  <a href="/wind">
+                      <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/windWO.png" title="Wind Speed" width=100%>
+                  </a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+    <footer>
+      {% include "footer.html" %}
+    </footer>
+
+    {% include "scripts.html" %} 
+  </body>
+
+</html>

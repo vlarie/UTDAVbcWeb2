@@ -1,0 +1,214 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(228, 228, 212);
+  }
+
+  /*                   */
+ /* NAVIGATION STYLES */
+/*                   */
+
+#navbarFlush {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.navbar {
+    padding: 0;
+    color: black;
+    text-align: right;
+    background-color: white;
+}
+
+.navbar-brand {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: teal;
+}
+
+.navbar-brand:hover {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+    background-color: white;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.navHeaderCollapse {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 0px;
+}
+
+.dropdown-menu {
+    background-color: white;
+    text-align: right;
+    border-color: transparent;
+    border-radius: 1px;
+    color: black;
+}
+
+.dropdown-menu.show {
+    background-color: white;
+    text-align: right;
+    border-color: transparent;
+    border-radius: 1px;
+    padding: 0px;
+}
+
+.dropdown-item:hover {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+}
+
+.nav-item:hover {
+    color: black;
+    text-decoration: none;
+    background-color: rgb(211, 211, 211);
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+  /*                   */
+ /*    BODY STYLES    */
+/*                   */
+
+#summary {
+    background-color: #ffffff;
+    padding: 30px;
+    padding-top: 25px;
+    margin: auto;
+    margin-top: 0px!important;
+    margin-bottom: 30px;
+    border: black;
+    border-radius: 2px;
+    position: relative;
+}
+
+#homeImage {
+    margin-right: 1rem;
+    margin-bottom: 1rem!important;
+    float: left;
+    border-radius: 1px;
+}
+
+.container-fluid {
+    display: flex;
+    width: 90%;
+    margin-top: 50px;
+    border-bottom: black;
+}
+
+h2 {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+    text-decoration-style: strong;
+    text-align: left;
+  }
+
+.media-body {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 2px;
+    overflow: visible;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 25px;
+}
+
+#otherviz {
+    background-color: #ffffff;
+    padding-top: 25px;
+    margin: auto;
+    margin-top: 0px!important;
+    /* margin-left: 65px; */
+    border: black;
+    border-radius: 2px;
+    position: relative;
+}
+
+#othervizrow {
+    padding-top: 15px;
+}
+
+img {    
+    border-radius: 1px;
+    text-align: center!important;
+}
+
+#plotCards {
+    padding-bottom: 20px;
+    border-radius: 2px;
+}
+
+h4.card-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+    text-decoration-style: strong;
+    text-align: left;
+}
+
+.row.align-items-top {
+    margin-top: 40px;
+}
+
+#viewLG {
+    align-content: center;
+}
+
+#dataTable {
+    background-color: #ffffff;
+    padding: 15px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    border: black;
+    border-radius: 2px;
+    position: relative;
+}
+#tableContainer {
+    margin-top: 0px!important;
+}
+
+.col-lg-6.col-sm-12 {
+    padding: 30px;
+    padding-top: 0px!important;
+    padding-bottom: 0px!important;
+}
+
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: teal;
+    padding: 30px;
+    padding-bottom: 5px!important;
+    text-decoration-style: strong;
+    text-align: center;
+}   
+
+#comprow {
+    padding: 0px;
+}
+footer {
+    padding: 5px;
+}
