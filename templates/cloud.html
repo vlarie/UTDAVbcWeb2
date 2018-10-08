@@ -20,33 +20,34 @@
 
 
   <body>
-        <nav class="navbar navbar-default navbar-expand-md">
-            <div class="container-fluid" id="navbarFlush">
-            <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand" href="/">Latitude</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeaderCollapse" aria-controls="navHeaderCollapse" aria-expanded="true" aria-label="Toggle Plots">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="navbar-collapse collapse justify-content-end" id="navHeaderCollapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="plotdropdown" data-toggle="dropdown" aria-haspopup="true", aria-expanded="false">Plots <b class="caret"></b></a>
-                            <div class="dropdown-menu" aria-labelledby="plotdropdown">
-                                <a class="dropdown-item" href="./templates/temp">Temperature</a>
-                                <a class="dropdown-item" href="./templates/humid">Humidity</a>
-                                <a class="dropdown-item" href="./templates/cloud">Cloud Coverage</a>
-                                <a class="dropdown-item" href="./templates/wind">Wind Speed</a>
-                            </div>
-                        </li>
-                        <div class="dropdown-divider"></div>
-                    <!-- Use the following line on appropriate pages to indicate it is the current page selected -->
-                    <!-- <li class="active"><a href="#">Comparisons <span class="sr-only">(current)</span></a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="./templates/comps">Comparisons</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./templates/data">Data</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <nav class="navbar navbar-default navbar-expand-md">
+      <div class="container-fluid" id="navbarFlush">
+      <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand" href="../">Latitude</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navHeaderCollapse" aria-controls="navHeaderCollapse" aria-expanded="true" aria-label="Toggle Plots">
+              <i class="fas fa-bars"></i>
+          </button>
+          <div class="navbar-collapse collapse justify-content-end" id="navHeaderCollapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="plotdropdown" data-toggle="dropdown" aria-haspopup="true", aria-expanded="false">Plots <b class="caret"></b></a>
+                      <div class="dropdown-menu" aria-labelledby="plotdropdown">
+                          <a class="dropdown-item" href="./temp.html">Temperature</a>
+                          <a class="dropdown-item" href="./humid.html">Humidity</a>
+                          <a class="dropdown-item" href="./cloud.html">Cloud Coverage</a>
+                          <a class="dropdown-item" href="./wind.html">Wind Speed</a>
+                      </div>
+                  </li>
+                  <div class="dropdown-divider"></div>
+              <!-- Use the following line on appropriate pages to indicate it is the current page selected -->
+              <!-- <li class="active"><a href="#">Comparisons <span class="sr-only">(current)</span></a></li> -->
+                  <li class="nav-item"><a class="nav-link" href="./comps.html">Comparisons</a></li>
+                  <li class="nav-item"><a class="nav-link" href="./data.html">Data</a></li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
   <div class="container-fluid">
     <div class="row align-items-top">
         <div class="col-lg-8 col-md-12 col-sm-12" id="summary">
@@ -78,29 +79,30 @@
           <hr>
           <div class="row" id="othervizrow">
               <div class="col-sm">
-                  <a href="/temp">
+                  <a href="./temp.html">
                       <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/tempWO.png" title="Temperature" width=100%>
                   </a>
               </div>
               <div class="col-sm">
-                  <a href="/humid">
+                  <a href="./humid.html">
                       <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/humidWO.png" title="Humidity" width=100%>
                   </a>
               </div>
           </div>
           <div class="row" id="othervizrow">
               <div class="col-sm">
-                  <a href="/cloud">
+                  <a href="./cloud.html">
                       <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/cloudWO.png" title="Cloud Coverage" width=100%>
                   </a>
               </div>
               <div class="col-sm">
-                  <a href="/wind">
+                  <a href="./wind.html">
                       <img class="shadow-sm p-3 mb-5 bg-white rounded" src="../static/Images/windWO.png" title="Wind Speed" width=100%>
                   </a>
               </div>
           </div>
       </div>
+
     </div>
 </div>
 
